@@ -1,11 +1,11 @@
-import {
-  ViewStyle,
-  StyleProp,
-  NativeSyntheticEvent,
-  NativeScrollEvent,
-  ScrollViewProps
-} from 'react-native'
 import { Component } from 'react'
+import {
+  NativeScrollEvent,
+  NativeSyntheticEvent,
+  ScrollViewProps,
+  StyleProp,
+  ViewStyle
+} from 'react-native'
 
 declare module 'react-native-swiper' {
   interface SwiperState {
@@ -46,7 +46,7 @@ declare module 'react-native-swiper' {
     // Set to true enable auto play mode.
     width?: number
     // If no specify default fullscreen mode by flex: 1.
-    height?: number
+    height?: number | string
     // See default style in source.
     style?: StyleProp<ViewStyle>
     // Customize the View container.
